@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>weather app</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- bootstap css -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-default" id="nav_bar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navLinks" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand app-name" href="index.html"><img src="img/logo.png" class="img-responsive" id="logo" alt=""><strong>Weather App</strong></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="nav navbar-nav navbar-right" id="nav_list">
+        <li><a href="Current.html">Current</a></li>
+        <li><a href="Forecast.html">Forecast</a></li>
+        <li><a href="http://footychat.epizy.com/portfolio" target="_blank">About Me</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="jumbotron jumbo">
+	<h2>Get Weather Information upto 16 days</h2>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+      <div class="form-group">
+        <label for="city-name">City Name:</label>
+        <input type="text" class="form-control" id="cityname" placeholder="Eg:London">
+      </div>
+
+      <div class="form-group">
+        <label for="number-of-days">Number of days:</label>
+        <input type="text" class="form-control" id="days" placeholder="min:1 max:16">
+      </div>
+
+      <div class="form-group">
+        <button id="submitCity" class="btn btn-primary" onclick="getForecast(document.getElementById('cityname').value,document.getElementById('days').value);">Get Forecast</button>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered  table-condensed">
+          <thead>
+            <tr>
+              <th>Icon</td>
+              <th>Weather</td>
+              <th>Description</td>
+              <th>Morning</td>
+              <th>Night</td>
+              <th>Min</td>
+              <th>Max</td>
+              <th>Pressure</td>
+              <th>Humidity</td>
+              <th>Wind Speed</td>
+            </tr>
+          </thead> 
+          <tbody id="forecast">
+            
+          </tbody> 
+        </table>  
+      </div>
+	  </div>
+  </div>
+</div>
+
+<!--Jquery-->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<!--bootstarp javascript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway');
+
+body{
+	font-family: 'Raleway',serif;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+#nav_bar{
+	margin-bottom: 0;
+	padding: 0;
+	background-color:transparent;
+	border: none;
+	position: absolute;
+}
+
+.app-name{
+	color: #d50000 !important;
+	font-size: 2.1em;
+	font-weight: bolder;
+	transition: all 0.3s;
+}
+.app-name:hover{
+	color: #fff!important;
+}
+#nav_list li a{
+	color: #d50000;
+	font-weight: bolder;
+	transition: all 0.3s;
+	font-size: 2.1em; 
+}
+
+#nav_list li a:hover{
+	color:#fff;
+}
+
+#logo{
+	max-height: 42px;
+	margin-right: 8px;
+	display: inline-block;
+	margin-top: -15px;
+}
+
+#headRow{
+	background-image: url('https://unsplash.it/1200?image=1056');
+	background-size: cover;
+	height:100vh;
+	width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#tagline{
+	color: black;
+	padding-top: 4%;
+	font-size: 2.3em;
+}
+#tagline-2{
+	color: black;
+	padding-top: 2%;
+	padding-bottom: 5%;
+	font-family: 'Indie Flower',cursive;
+	font-size: 2em;
+}
+
+ul#list_inline{
+	color: black;
+	font-size: 1.8em;
+	text-align: center;
+
+}
+
+.jumbo h2{
+	font-size: 2.2em;
+	font-weight: lighter;
+	text-align: center;
+}
+
+#city{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+.jumbo{
+	margin-bottom: 0px;
+	background-color: #4aa1f3;
+	color: white;
+}
+input[type='text'],#submitCity{
+	height: 1.8em;
+	font-size: 1.6em;
+	margin-bottom: 8%;
+}
+
+label{
+	font-size: 1.6em;
+	margin-top: 2%;
+}
+table{
+	font-size: 1.6em;
+}
+
+#weather-data{
+	min-width:200px;
+	background-color:  #4aa1f3;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 1.6em;
+
+}
+
+#weather-data h3{
+	padding-top: 3%;
+}
+#weather-data p:last-child{
+	padding-bottom: 3%;
+}
+
+
+  
+  @-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	color: black;
+	font-weight: lighter;
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+
+@media only screen and (max-width: 720px) {
+    #nav_bar {
+        background-color:#4DD0E1;
+        z-index: 1000000000000;
+        width: 100%;
+    }
+}

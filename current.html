@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>weather app</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- bootstap css -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-default" id="nav_bar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navLinks" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand app-name" href="index.html"><img src="img/logo.png" class="img-responsive" id="logo" alt=""><strong>Weather App</strong></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="nav navbar-nav navbar-right" id="nav_list">
+        <li><a href="Current.html">Current</a></li>
+        <li><a href="Forecast.html">Forecast</a></li>
+        <li><a href="http://footychat.epizy.com/portfolio" target="_blank">About Me</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="jumbotron jumbo">
+	<h2>Get Current Weather Information</h2>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-center text-primary">Enter City Name:</h3>
+			<div id="error"></div>
+		</div>
+		<div class="row form-group form-inline" id="city">
+			<input type="text" name="cityname" id="cityname" class="form-control" placeholder="Enter city name"></input>
+			<button id="submitCity" class="btn btn-primary" onclick="getWeather(document.getElementById('cityname').value);">Search City</button>
+		</div>
+        <div id="weather-data">
+		
+	    </div>
+	</div>
+</div>
+<!--Jquery-->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<!--bootstarp javascript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
