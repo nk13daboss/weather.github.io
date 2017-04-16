@@ -67,6 +67,3 @@ function formatForecast(data){
 	return table;
 }
 
-$(document).ready(function blink(){
-	$('.blink').fadeOut(500).fadeIn(500,blink());
-});

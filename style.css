@@ -10,9 +10,10 @@ body{
 #nav_bar{
 	margin-bottom: 0;
 	padding: 0;
-	background-color:transparent;
+	background-color:#fff;
 	border: none;
-	position: absolute;
+	z-index: 10000;
+	/*position: absolute;*/
 }
 
 .app-name{
@@ -45,11 +46,14 @@ body{
 #headRow{
 	background-image: url('https://unsplash.it/1200?image=1056');
 	background-size: cover;
-	height:100vh;
-	width: auto;
+	top: 0; bottom: 0;
+    position: absolute;
+    width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 0;
+	margin: 0;
 }
 
 #tagline{
@@ -137,10 +141,3 @@ table{
 }
 
 
-@media only screen and (max-width: 720px) {
-    #nav_bar {
-        background-color:#4DD0E1;
-        z-index: 1000000000000;
-        width: 100%;
-    }
-}
